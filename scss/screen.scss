@@ -1,0 +1,266 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+@import "compass/utilities/links/hover-link";
+@import "compass/layout";
+
+@import "browseHappy";
+
+
+@include sticky-footer(3em);
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+body{
+	font-family: "proxima-nova", sans-serif;
+	background-color: #f1f1f1;
+		
+}
+
+img {
+        max-width: 100% !important;
+
+    }		
+
+.wrapper{
+	padding: 0 2em;
+	margin: 0 auto;
+	max-width: 73.125em;
+}
+
+header{
+	background-color: #f2f2f2;
+	
+	
+	h1{
+		text-transform:uppercase;
+		letter-spacing: +2px;
+		
+		padding: 2em 0;
+		float:left;
+		
+		color: #555;
+	}
+	nav{
+		
+		
+		float: right;
+		ul{
+			li{
+				display:inline-block;
+				a{
+					letter-spacing: +2px;
+					padding: 2em 0 2em 4em ;
+
+					display: block;
+					color: #7E9E6F;
+					text-decoration: none;
+					text-transform:uppercase;
+					font-weight: 400;
+					font-size: 1em;
+					@include hover-link;
+				}
+			}	
+		}
+	
+		}
+		:after{
+			display: block;
+			content:"";
+			clear: both;
+			}
+
+}
+#presentation{
+
+	background-color: #363B48;
+	color: #FFF;
+	padding: 4em 0;
+	text-align: center;
+	h2{
+
+	
+
+	}
+}
+
+#works{
+	padding: 4em 0;
+	
+
+	h2{
+		text-transform: uppercase;
+		font-weight: 700;	
+		font-size: 2em;
+		padding-bottom: 1em;	
+	}
+
+	.work{
+		background-color: #FFF;
+		border-bottom: 4px solid #e5e5e5;
+		margin-left: 2.564102564%;
+		margin-bottom: 2.564102564%;
+		width : 23.076923076%;
+		float: left;
+		p{
+			text-align: center;
+			
+		}
+	
+	
+	}
+	.first{
+		margin-left: 0;
+	}
+		:after{
+		display: block;
+		content:"";
+		clear: both;
+		}
+	
+}
+
+#social{
+	padding: 4em 0;
+		background-color: #363B48;
+
+	h2{
+		text-transform: uppercase;
+		color: #FFF;
+		font-size: 2em;
+		font-weight: 700;	
+
+	}
+
+	p{
+		font-size: 1.5em;
+		color: #eee;
+	}
+	ul{
+		float: right;
+	}
+
+	
+	:after{
+		display: block;
+		content:"";
+		clear: both;
+		}
+	}
+
+footer{
+	
+
+		
+		
+	ul{
+			
+		padding: 1em 0; 
+		li{
+				margin-left: 2.564102564%;	
+				float:left;
+				display:block;
+				width: 31.623931623%;
+				text-align: center;
+				text-transform: uppercase;
+				color: #555;
+			}
+			:first-child{
+			margin-left: 0;
+			text-align: left;
+			}
+
+			:last-child{
+			margin-left: 0;
+			text-align: right;
+			}
+
+
+		}:after{
+		display: block;
+		content:"";
+		clear: both;
+		}
+		
+
+}
+

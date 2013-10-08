@@ -1,0 +1,77 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+
+@import "compass/reset";
+ @import "compass/utilities/links/hover-link";
+;
+@import "browseHappy";
+
+@import "compass/layout";
+
+body{
+	font-family:  "europa", sans-serif;
+
+}
+
+header{
+	background-color: #000;
+	text-align: center;
+	
+	
+	h1{
+		text-transform:uppercase;
+		letter-spacing: +2px;
+padding: 4em;
+		
+		color: #FFF;
+	}
+	nav{
+		
+		 display:block;
+		
+		ul{
+			li{
+				display:inline-block;
+				a{
+					letter-spacing: +2px;
+					padding: 2em;
+					display: block;
+					color: white;
+					text-decoration: none;
+					text-transform:uppercase;
+					font-weight: 400;
+					font-size: 1.5em;
+					@include hover-link;
+				}
+			}	
+		}
+		:after{
+		display: block;
+		content:"";
+		clear: both;
+	}
+	
+	}
+
+}
+
+
+@include sticky-footer(54px);
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 73.125em;
+}
+footer{
+	background: black;
+	color: #fff;
+	
+	li{
+		display: inline-block;
+	}
+}
+
